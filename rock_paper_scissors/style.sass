@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Marhey&display=swap')
+
+*
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+
+body
+    background: rgba(33,33,33,1)
+    background: -moz-linear-gradient(left, rgba(33,33,33,1) 0%, rgba(67,67,67,1) 100%)
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(33,33,33,1)), color-stop(100%, rgba(67,67,67,1)))
+    background: -webkit-linear-gradient(left, rgba(33,33,33,1) 0%, rgba(67,67,67,1) 100%)
+    background: -o-linear-gradient(left, rgba(33,33,33,1) 0%, rgba(67,67,67,1) 100%)
+    background: -ms-linear-gradient(left, rgba(33,33,33,1) 0%, rgba(67,67,67,1) 100%)
+    background: linear-gradient(to right, rgba(33,33,33,1) 0%, rgba(67,67,67,1) 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#212121', endColorstr='#434343', GradientType=1 )
+    font-family: 'Marhey', cursive
+    font-size: 20px
+    color: #333333
+    background-repeat: no-repeat
+    background-attachment: fixed
+    height: 100%
+
+.container
+    max-width: 1230px
+    margin: 0 auto
+    padding: 0 15px
+
+.playground-wrap
+    padding-top: 200px
+    width: 100%
+.score
+    margin: 0 auto
+    width: 400px
+    height: 150px
+    border: 2px solid #8d8d8d
+    background-color: transparent
+    display: flex
+    justify-content: space-between
+    &-count-human
+        padding-top: 10px
+        width: 100px
+        display: flex
+        span
+            padding-left: 20px
+            margin: 0 auto
+            font-size: 50px
+            color: #F5DE38
+            padding-top: 15px
+        &-img
+            width: 100%
+            p
+                color: #cfcfcf
+                margin-left: 15px
+                margin-top: -15px
+            img
+                margin: 0 auto
+                width: 100px
+                height: 100px
+                filter: invert(100%)
+                -webkit-filter: invert(100%)
+
+    &-count-robot
+        padding-top: 15px
+        width: 100px
+        display: flex
+        margin-right: 70px
+
+        img
+            margin: 0 auto
+            width: 100px
+            height: 95px
+            filter: invert(100%)
+            -webkit-filter: invert(100%)
+        span
+
+            margin-right: 20px
+            font-size: 50px
+            color: #F5DE38
+            padding-top: 10px
+
+.massage
+    margin: 0 auto
+    padding-top: 50px
+    color: #fff
+    width: 500px
+    &-out
+        p
+            font-size: 30px
+            color: #F5DE38
+
+.decide
+    display: flex
+    width: 800px
+    justify-content: space-between
+    margin: 0 auto
+    padding-top: 100px
+
+    &-rock
+        cursor: pointer
+        border: 1px solid #fff
+        padding: 20px 60px
+        border-radius: 100%
+        transition: all  0.5s
+        &:hover
+            -webkit-box-shadow: 0px 0px 105px 45px rgba(212,212,212,0.9)
+            -moz-box-shadow: 0px 0px 105px 45px rgba(212,212,212,0.9)
+            box-shadow: 0px 0px 105px 45px rgba(212,212,212,0.9)
+        img
+            width: 100px
+            filter: invert(100%)
+            -webkit-filter: invert(100%)
+        p
+            color: #fff
+            font-size: 40px
+            margin: 0 auto
+    &-paper
+        cursor: pointer
+        border: 1px solid #fff
+        padding: 20px 55px
+        border-radius: 100%
+        transition: all 0.5s
+        &:hover
+            -webkit-box-shadow: 0px 0px 105px 45px rgba(212,212,212,0.9)
+            -moz-box-shadow: 0px 0px 105px 45px rgba(212,212,212,0.9)
+            box-shadow: 0px 0px 105px 45px rgba(212,212,212,0.9)
+        img
+            width: 100px
+            filter: invert(100%)
+            -webkit-filter: invert(100%)
+            margin-left: 15px
+        p
+            color: #fff
+            font-size: 40px
+            margin: 0 auto
+    &-scissors
+        cursor: pointer
+        border: 1px solid #fff
+        padding: 20px 35px
+        border-radius: 100%
+        transition: all 0.5s
+        &:hover
+            -webkit-box-shadow: 0px 0px 105px 45px rgba(212,212,212,0.9)
+            -moz-box-shadow: 0px 0px 105px 45px rgba(212,212,212,0.9)
+            box-shadow: 0px 0px 105px 45px rgba(212,212,212,0.9)
+        img
+            width: 100px
+            filter: invert(100%)
+            -webkit-filter: invert(100%)
+            margin-left: 30px
+        p
+            color: #fff
+            font-size: 40px
+            margin: 0 auto

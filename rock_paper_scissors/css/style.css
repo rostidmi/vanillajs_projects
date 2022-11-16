@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Marhey&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: rgb(33, 33, 33);
+  background: -moz-linear-gradient(left, rgb(33, 33, 33) 0%, rgb(67, 67, 67) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgb(33, 33, 33)), color-stop(100%, rgb(67, 67, 67)));
+  background: -webkit-linear-gradient(left, rgb(33, 33, 33) 0%, rgb(67, 67, 67) 100%);
+  background: -o-linear-gradient(left, rgb(33, 33, 33) 0%, rgb(67, 67, 67) 100%);
+  background: -ms-linear-gradient(left, rgb(33, 33, 33) 0%, rgb(67, 67, 67) 100%);
+  background: linear-gradient(to right, rgb(33, 33, 33) 0%, rgb(67, 67, 67) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#212121", endColorstr="#434343", GradientType=1 );
+  font-family: "Marhey", cursive;
+  font-size: 20px;
+  color: #333333;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+}
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.playground-wrap {
+  padding-top: 200px;
+  width: 100%;
+}
+
+.score {
+  margin: 0 auto;
+  width: 400px;
+  height: 150px;
+  border: 2px solid #8d8d8d;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+}
+.score-count-human {
+  padding-top: 10px;
+  width: 100px;
+  display: flex;
+}
+.score-count-human span {
+  padding-left: 20px;
+  margin: 0 auto;
+  font-size: 50px;
+  color: #F5DE38;
+  padding-top: 15px;
+}
+.score-count-human-img {
+  width: 100%;
+}
+.score-count-human-img p {
+  color: #cfcfcf;
+  margin-left: 15px;
+  margin-top: -15px;
+}
+.score-count-human-img img {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+}
+.score-count-robot {
+  padding-top: 15px;
+  width: 100px;
+  display: flex;
+  margin-right: 70px;
+}
+.score-count-robot img {
+  margin: 0 auto;
+  width: 100px;
+  height: 95px;
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+}
+.score-count-robot span {
+  margin-right: 20px;
+  font-size: 50px;
+  color: #F5DE38;
+  padding-top: 10px;
+}
+
+.massage {
+  margin: 0 auto;
+  padding-top: 50px;
+  color: #fff;
+  width: 500px;
+}
+.massage-out p {
+  font-size: 30px;
+  color: #F5DE38;
+}
+
+.decide {
+  display: flex;
+  width: 800px;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+.decide-rock {
+  cursor: pointer;
+  border: 1px solid #fff;
+  padding: 20px 60px;
+  border-radius: 100%;
+  transition: all 0.5s;
+}
+.decide-rock:hover {
+  -webkit-box-shadow: 0px 0px 105px 45px rgba(212, 212, 212, 0.9);
+  -moz-box-shadow: 0px 0px 105px 45px rgba(212, 212, 212, 0.9);
+  box-shadow: 0px 0px 105px 45px rgba(212, 212, 212, 0.9);
+}
+.decide-rock img {
+  width: 100px;
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+}
+.decide-rock p {
+  color: #fff;
+  font-size: 40px;
+  margin: 0 auto;
+}
+.decide-paper {
+  cursor: pointer;
+  border: 1px solid #fff;
+  padding: 20px 55px;
+  border-radius: 100%;
+  transition: all 0.5s;
+}
+.decide-paper:hover {
+  -webkit-box-shadow: 0px 0px 105px 45px rgba(212, 212, 212, 0.9);
+  -moz-box-shadow: 0px 0px 105px 45px rgba(212, 212, 212, 0.9);
+  box-shadow: 0px 0px 105px 45px rgba(212, 212, 212, 0.9);
+}
+.decide-paper img {
+  width: 100px;
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+  margin-left: 15px;
+}
+.decide-paper p {
+  color: #fff;
+  font-size: 40px;
+  margin: 0 auto;
+}
+.decide-scissors {
+  cursor: pointer;
+  border: 1px solid #fff;
+  padding: 20px 35px;
+  border-radius: 100%;
+  transition: all 0.5s;
+}
+.decide-scissors:hover {
+  -webkit-box-shadow: 0px 0px 105px 45px rgba(212, 212, 212, 0.9);
+  -moz-box-shadow: 0px 0px 105px 45px rgba(212, 212, 212, 0.9);
+  box-shadow: 0px 0px 105px 45px rgba(212, 212, 212, 0.9);
+}
+.decide-scissors img {
+  width: 100px;
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+  margin-left: 30px;
+}
+.decide-scissors p {
+  color: #fff;
+  font-size: 40px;
+  margin: 0 auto;
+}/*# sourceMappingURL=style.css.map */
