@@ -1,7 +1,7 @@
 # 🔥 Web Projects With Vanilla JavaScript
 
-Repository with basic projects in pure *JavaScript* with *Html* and *Css*. 
-Check out
+Repository with basic projects in pure ***JavaScript*** with ***Html*** and ***Css***. 
+Check out.
 
 # 💻 Why it's worth doing these projects?
 
