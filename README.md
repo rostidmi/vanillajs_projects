@@ -10,7 +10,7 @@ I have created several projects to study it.
 
 # 🍉 Projects
 
-|  #  |            Project             | Live Demo |
-| :-: | :----------------------------: | :-------: |
+|  #  |            Project             | Live Demo | Live Demo |
+| :-: | :----------------------------: | :-------: | :-------: |
 | 01  |       [Rock / Paper / Scissors](https://github.com/udesurd/vanillajs_projects/tree/main/rock_paper_scissors)       | [Live Demo](https://udesurd.github.io/vanillajs_projects/rock_paper_scissors/)  | 
 
