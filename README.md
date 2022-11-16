@@ -1,8 +1,16 @@
-# Web Projects With Vanilla JavaScript
+# 🔥 Web Projects With Vanilla JavaScript
 
+Repository with basic projects in pure *JavaScript* with *Html* and *Css*. 
+Check out
+
+# 💻 Why it's worth doing these projects?
+
+Javascript is one of the most sought-after languages that is present everywhere in our lives. 
+I have created several projects to study it.
+
+# 🍉 Projects
 
 |  #  |            Project             | Live Demo |
 | :-: | :----------------------------: | :-------: |
 | 01  |       [Rock / Paper / Scissors](https://github.com/udesurd/vanillajs_projects/tree/main/rock_paper_scissors)       | [Live Demo](https://udesurd.github.io/vanillajs_projects/rock_paper_scissors/)  | 
-| 02  |       [NAME](PATH)       | [Live Demo](PATH)  | 
-| 03  |       [NAME](PATH)       | [Live Demo](PATH)  | 
+
