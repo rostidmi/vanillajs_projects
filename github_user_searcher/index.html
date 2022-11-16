@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>GitHub Searcher</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <a href="#"
+            ><h1>GitHub Searcher</h1>
+            <img src="./img/binoculars.png" alt=""
+          /></a>
+          <a href="#" class="popup">About</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="form__main">
+            <form class="form">
+                <div class="form__input">
+                  <input class="input" type="text" placeholder="Enter username..." />
+                  <button class="btn" type="submit">Find</button>
+                </div>
+              </form>
+              <div class="popup__menu">
+                <div class="popup__content bg">
+                  <p>Prototype service for searching user profiles, created in native html, css, javascript. 
+                  </br> The code is publicly available at the <a class="bg" href="https://github.com/udesurd/github_user_searcher">link</a></p>
+                  <img src="./img/close.png" alt="" class="close">
+                </div>
+                <img src="./img/cat.jpg" class="cat"alt="">
+              </div>
+              <div class="form__main-wrapper">
+                <div class="form__wrapper">
+                  <div class="form__result">
+                    <div class="form__result-main-info">
+                      <h2 class="username"></h2>
+                      <p class="followers"></p>
+                      
+                    </div>
+                    <div class="form__result-info">
+                      <h2 class="organization"></h2>
+                      <p class="repos"></p>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+      </div>
+    </main>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/popup.js"></script>
+    
+  </body>
+</html>
