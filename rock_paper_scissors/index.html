@@ -6,54 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock / Paper / Scissors</title>
     <link rel="stylesheet" href="css/style.css" />
-    </head>
-    <body>
-        <header></header>
-        <main>
-        <div class="container">
-            <div class="playground-wrap">
-                <div class="score">
-                    <div class="score-count-human">
-                        <div class="score-count-human-img">
-                            <img src="img/man.png" alt="" />
-                            <p>Human</p>
+  </head>
+  <body>
+    <header></header>
+    <main>
+        <section class="game">
+            
+                <div class="game-wrap">
+                    <div class="score">
+                        <div class="score-player">
+                            <span id="player-score">0</span>
                         </div>
-
-                        <span>1</span>
-                    </div>
-
-                    <div class="score-count-robot">
-                        <span>1</span>
-                        <div class="score-count-human-img">
-                            <img src="img/robot.png" alt="" />
-                            <p>Robot</p>
+                        <div class="moves"><p>Moves: </p><span>9</span></div>
+                        <div class="score-computer">
+                            <span id="computer-score">0</span>
                         </div>
                     </div>
-                    
-                </div>
-                <div class="massage">
-                    <div class="massage-out">
-                        <p id="message">123</p>
+                    <div class="container">
+                        <div class="message" >
+                            <p id="message">Player Win!</p>
+                        </div>
+                        <div class="buttons">
+                            <div class="btn-rock" >
+                                <button id="rock">Rock!<img src="img/rock.png" alt=""></button>
+                                <p>Rock!</p>
+                            </div>
+                            <div class="btn-paper" >
+                                <button id="paper">Paper!<img src="img/paper.png" alt=""></button>
+                                <p>Paper!</p>
+                            </div>
+                            <div class="btn-scissors" >
+                                <button id="scissors">Scissors!<img src="img/scissors.png" alt=""></button>
+                                <p>Scissors!</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="decide">
-                    <div class="decide-rock">
-                        <img src="img/rock.png" alt="">
-                        <button>Rock</button>
-                        
-                    </div>
-                    <div class="decide-paper">
-                        <img src="img/paper.png" alt="">
-                        <button>Rock</button>
-                    </div>
-                    <div class="decide-scissors">
-                        <img src="img/scissor-tool.png" alt="">
-                        <button>Rock</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </main>
-        <script src="index.js"></script>
-    </body>
+            
+        </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
 </html>
