@@ -6,9 +6,11 @@
 }
 
 body {
-  background: linear-gradient(107.54deg, #1CA8DD 0%, #57BDD1 100%);
+  background: linear-gradient(107.54deg, #1CA8DD 0%, #57BDD1 100%) center;
   background-repeat: no-repeat;
-  height: 100vh;
+  background-size: cover;
+  height: 100%;
+  min-height: 100vh;
   font-family: "Roboto";
   color: #fff;
 }
@@ -141,6 +143,39 @@ button {
   cursor: default;
 }
 
+.game-over-wrap {
+  display: none;
+  text-align: center;
+  background-color: #fff;
+  margin: 0 auto;
+  max-width: 500px;
+  margin-top: 30vh;
+}
+.game-over-wrap h2 {
+  color: #D55342;
+  font-size: 40px;
+  padding: 20px;
+  font-weight: 600;
+}
+.game-over-wrap p {
+  color: rgba(29, 29, 29, 0.8392156863);
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.game-over__btn {
+  background-color: #000;
+  max-width: 200px;
+  width: 100%;
+  padding: 10px 0;
+  background-color: #D2D542;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
 @media screen and (max-width: 740px) {
   .message {
     text-align: center;
@@ -181,5 +216,127 @@ button {
   .moves span {
     font-size: 40px;
     font-weight: 600;
+  }
+  .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .buttons .btn-rock {
+    text-align: center;
+  }
+  .buttons .btn-rock img {
+    margin-top: 13px;
+    width: 130px;
+    height: 130px;
+    transition: all 0.5s;
+  }
+  .buttons .btn-rock img:hover {
+    transform: scale(90%);
+  }
+  .buttons .btn-rock p {
+    font-size: 30px;
+    font-weight: 600;
+    cursor: default;
+  }
+  .buttons .btn-paper {
+    text-align: center;
+    margin-top: 5px;
+  }
+  .buttons .btn-paper img {
+    width: 160px;
+    height: 140px;
+    transition: all 0.5s;
+  }
+  .buttons .btn-paper img:hover {
+    transform: scale(90%);
+  }
+  .buttons .btn-paper p {
+    font-size: 30px;
+    font-weight: 600;
+    cursor: default;
+  }
+  .buttons .btn-scissors {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .buttons .btn-scissors img {
+    width: 140px;
+    height: 120px;
+    transition: all 0.5s;
+  }
+  .buttons .btn-scissors img:hover {
+    transform: scale(90%);
+  }
+  .buttons .btn-scissors p {
+    font-size: 30px;
+    font-weight: 600;
+    cursor: default;
+  }
+}
+@media screen and (max-width: 450px) {
+  .moves {
+    margin-top: 143px;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  .btn-rock {
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  .btn-rock img {
+    margin-top: 13px;
+    width: 110px !important;
+    height: 110px !important;
+    transition: all 0.5s;
+  }
+  .btn-rock img:hover {
+    transform: scale(90%);
+  }
+  .btn-rock p {
+    font-size: 30px;
+    font-weight: 600;
+    cursor: default;
+  }
+  .btn-paper {
+    text-align: center;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+  }
+  .btn-paper img {
+    width: 140px !important;
+    height: 110px !important;
+    transition: all 0.5s;
+  }
+  .btn-paper img:hover {
+    transform: scale(90%);
+  }
+  .btn-paper p {
+    font-size: 30px;
+    font-weight: 600;
+    cursor: default;
+  }
+  .btn-scissors {
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+  }
+  .btn-scissors img {
+    width: 120px !important;
+    height: 90px !important;
+    transition: all 0.5s;
+  }
+  .btn-scissors img:hover {
+    transform: scale(90%);
+  }
+  .btn-scissors p {
+    font-size: 30px;
+    font-weight: 600;
+    cursor: default;
   }
 }/*# sourceMappingURL=style.css.map */

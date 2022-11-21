@@ -6,10 +6,12 @@
     margin: 0
 
 body
-    background: linear-gradient(107.54deg, #1CA8DD 0%, #57BDD1 100%)
+    background: linear-gradient(107.54deg, #1CA8DD 0%, #57BDD1 100%) center
     background-repeat: no-repeat
+    background-size: cover
 
-    height: 100vh
+    height: 100%
+    min-height: 100vh
     font-family: 'Roboto'
     color: #fff
 
@@ -79,6 +81,7 @@ button
 
 .btn-rock
     text-align: center
+
     img
         width: 150px
         height: 160px
@@ -113,6 +116,36 @@ button
         font-size: 50px
         font-weight: 600
         cursor: default
+.game-over-wrap
+    display: none
+    text-align: center
+    background-color: #fff
+    margin: 0 auto
+    max-width: 500px
+    margin-top: 30vh
+
+    h2
+        color: #D55342
+        font-size: 40px
+        padding: 20px
+        font-weight: 600
+    p
+        color: #1d1d1dd6
+        font-weight: 600
+        font-size: 30px
+.game-over__btn
+    background-color: #000
+    max-width: 200px
+    width: 100%
+    padding: 10px 0
+    background-color: #D2D542
+    color: #fff
+    font-size: 20px
+    font-weight: 600
+    margin-top: 30px
+    margin-bottom: 20px
+
+    
 
 @media screen and (max-width: 740px)
     .message
@@ -150,3 +183,101 @@ button
         span
             font-size: 40px
             font-weight: 600
+    .buttons
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+        .btn-rock
+            text-align: center
+            img
+                margin-top: 13px
+                width: 130px
+                height: 130px
+                transition: all 0.5s
+                &:hover
+                    transform: scale(90%)
+            p
+                font-size: 30px
+                font-weight: 600
+                cursor: default
+        .btn-paper
+            text-align: center
+            margin-top: 5px
+            img
+                width: 160px
+                height: 140px
+                transition: all 0.5s
+                &:hover
+                    transform: scale(90%)
+            p
+                font-size: 30px
+                font-weight: 600
+                cursor: default
+        .btn-scissors
+            text-align: center
+            margin-top: 30px
+            img
+
+                width: 140px
+                height: 120px
+                transition: all 0.5s
+                &:hover
+                    transform: scale(90%)
+            p
+                font-size: 30px
+                font-weight: 600
+                cursor: default
+
+@media screen and (max-width: 450px)
+    .moves
+        margin-top: 143px
+    .buttons
+        display: flex
+        flex-direction: column
+    .btn-rock
+        text-align: center
+        display: flex
+        align-items: center
+        img
+            margin-top: 13px
+            width: 110px !important
+            height: 110px !important
+            transition: all 0.5s
+            &:hover
+                transform: scale(90%)
+        p
+            font-size: 30px
+            font-weight: 600
+            cursor: default
+    .btn-paper
+        text-align: center
+        margin-top: 5px
+        display: flex
+        align-items: center
+        img
+            width: 140px !important
+            height: 110px !important
+            transition: all 0.5s
+            &:hover
+                transform: scale(90%)
+        p
+            font-size: 30px
+            font-weight: 600
+            cursor: default
+    .btn-scissors
+        text-align: center
+        margin-top: 30px
+        display: flex
+        align-items: center
+        img
+
+            width: 120px !important
+            height: 90px !important
+            transition: all 0.5s
+            &:hover
+                transform: scale(90%)
+        p
+            font-size: 30px
+            font-weight: 600
+            cursor: default
