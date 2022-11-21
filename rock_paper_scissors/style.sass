@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap')
+
+*
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+
+body
+    background: linear-gradient(107.54deg, #1CA8DD 0%, #57BDD1 100%) center
+    background-repeat: no-repeat
+    background-size: cover
+
+    height: 100%
+    min-height: 100vh
+    font-family: 'Roboto'
+    color: #fff
+
+button
+    background-color: inherit
+    border: none
+    cursor: pointer
+    outline: none
+    color: transparent
+.score
+    display: flex
+    justify-content: space-between
+    position: relative
+    &-player
+        max-width: 220px
+        height: 220px
+        width: 100%
+
+        background-color: #D2D542
+
+        span
+
+            margin-top: 20%
+            display: flex
+            justify-content: center
+            font-weight: 700
+            font-size: 90px
+    &-computer
+        width: 100%
+        height: 100%
+        max-width: 220px
+        height: 220px
+        background-color: #D55342
+
+        span
+            margin-top: 20%
+            display: flex
+            justify-content: center
+            font-weight: 700
+            font-size: 90px
+.container
+    max-width: 1270px
+    padding: 0 15px
+    margin: 0 auto
+.message
+    text-align: center
+    height: 300px
+    margin-top: 40px
+    p
+        font-size: 70px
+        font-weight: 600
+.moves
+    margin-top: 20px
+    display: flex
+    p
+        font-size: 60px
+        font-weight: 600
+    span
+        font-size: 60px
+        font-weight: 600
+
+.buttons
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding-top: 90px
+
+.btn-rock
+    text-align: center
+
+    img
+        width: 150px
+        height: 160px
+        transition: all 0.5s
+        &:hover
+            transform: scale(90%)
+    p
+        font-size: 50px
+        font-weight: 600
+        cursor: default
+.btn-paper
+    text-align: center
+    img
+        width: 220px
+        height: 160px
+        transition: all 0.5s
+        &:hover
+            transform: scale(90%)
+    p
+        font-size: 50px
+        font-weight: 600
+        cursor: default
+.btn-scissors
+    text-align: center
+    img
+        width: 200px
+        height: 160px
+        transition: all 0.5s
+        &:hover
+            transform: scale(90%)
+    p
+        font-size: 50px
+        font-weight: 600
+        cursor: default
+.game-over-wrap
+    display: none
+    text-align: center
+    background-color: #fff
+    margin: 0 auto
+    max-width: 500px
+    margin-top: 30vh
+    h2
+        color: #D55342
+        font-size: 40px
+        padding: 20px
+        font-weight: 600
+    p
+        color: #1d1d1dd6
+        font-weight: 600
+        font-size: 30px
+.game-over__btn
+    background-color: #000
+    max-width: 200px
+    width: 100%
+    padding: 10px 0
+    background-color: #D2D542
+    color: #fff
+    font-size: 20px
+    font-weight: 600
+    margin-top: 30px
+    margin-bottom: 20px
+
+    
+
+@media screen and (max-width: 740px)
+    .message
+        text-align: center
+        height: 200px
+
+        p
+            font-size: 40px
+            font-weight: 600
+    .moves
+        p
+            font-size: 40px
+        span
+            font-size: 40px
+    .buttons
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding-top: 0px
+
+@media screen and (max-width: 600px)
+    .moves
+        padding-top: 20px
+        display: flex
+        top: 20%
+        left: 50%
+        transform: translate(-50%, -50%)
+        position: absolute
+        background-color: #1CA8DD
+        padding: 10px
+        p
+            font-size: 40px
+            font-weight: 600
+
+        span
+            font-size: 40px
+            font-weight: 600
+    .buttons
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+        .btn-rock
+            text-align: center
+            img
+                margin-top: 13px
+                width: 130px
+                height: 130px
+                transition: all 0.5s
+                &:hover
+                    transform: scale(90%)
+            p
+                font-size: 30px
+                font-weight: 600
+                cursor: default
+        .btn-paper
+            text-align: center
+            margin-top: 5px
+            img
+                width: 160px
+                height: 140px
+                transition: all 0.5s
+                &:hover
+                    transform: scale(90%)
+            p
+                font-size: 30px
+                font-weight: 600
+                cursor: default
+        .btn-scissors
+            text-align: center
+            margin-top: 30px
+            img
+
+                width: 140px
+                height: 120px
+                transition: all 0.5s
+                &:hover
+                    transform: scale(90%)
+            p
+                font-size: 30px
+                font-weight: 600
+                cursor: default
+
+@media screen and (max-width: 450px)
+    .moves
+        margin-top: 143px
+    .buttons
+        display: flex
+        flex-direction: column
+    .btn-rock
+        text-align: center
+        display: flex
+        align-items: center
+        img
+            margin-top: 13px
+            width: 110px !important
+            height: 110px !important
+            transition: all 0.5s
+            &:hover
+                transform: scale(90%)
+        p
+            font-size: 30px
+            font-weight: 600
+            cursor: default
+    .btn-paper
+        text-align: center
+        margin-top: 5px
+        display: flex
+        align-items: center
+        img
+            width: 140px !important
+            height: 110px !important
+            transition: all 0.5s
+            &:hover
+                transform: scale(90%)
+        p
+            font-size: 30px
+            font-weight: 600
+            cursor: default
+    .btn-scissors
+        text-align: center
+        margin-top: 30px
+        display: flex
+        align-items: center
+        img
+
+            width: 120px !important
+            height: 90px !important
+            transition: all 0.5s
+            &:hover
+                transform: scale(90%)
+        p
+            font-size: 30px
+            font-weight: 600
+            cursor: default
