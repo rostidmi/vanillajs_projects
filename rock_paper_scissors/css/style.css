@@ -97,7 +97,7 @@ button {
 }
 .btn-rock img {
   width: 150px;
-  height: 160px;
+  height: 140px;
   transition: all 0.5s;
 }
 .btn-rock img:hover {
@@ -113,7 +113,7 @@ button {
   text-align: center;
 }
 .btn-paper img {
-  width: 220px;
+  width: 200px;
   height: 160px;
   transition: all 0.5s;
 }
